@@ -7,7 +7,7 @@ LABEL version="1.18.1-105" \
 RUN mkdir /papermc && \
     mkdir /papermc/workspace && \
     cd /papermc && \
-    wget https://papermc.io/api/v2/projects/paper/versions/1.18.1/builds/105/downloads/paper-1.18.1-105.jar
+    wget https://papermc.io/api/v2/projects/paper/versions/1.18.1/builds/110/downloads/paper-1.18.1-110.jar
 
 COPY start_server.sh /papermc/start_server.sh
 
