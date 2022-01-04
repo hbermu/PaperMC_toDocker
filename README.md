@@ -1,6 +1,10 @@
 # PaperMC to Docker!
 Now [PaperMC](https://papermc.io/) in docker for your easy use.
 
+# Build
+```
+docker build -t papermc:latest .
+```
 # Run
 ```
 docker run -p 25565:25565 hbermu/papermc:latest
