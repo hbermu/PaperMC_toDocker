@@ -8,4 +8,4 @@ eula=true""" > /papermc/workspace/eula.txt
 fi
 
 ## Run minecraft server
-/opt/openjdk-17/bin/java -Xms${XM}G -Xmx${XM}G -jar /papermc/paper.jar --nogui
+/bin/java -Xms${XM}G -Xmx${XM}G -jar /papermc/paper.jar --nogui

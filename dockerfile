@@ -1,15 +1,15 @@
-FROM openjdk:17-alpine
+FROM openjdk:17.0.1-oraclelinux8
 
-LABEL version="$MINECRAFT_VERSION-$PAPER_VERSION" \
+LABEL version="1.18.1-148" \
       description="PaperMC server. Paper is a high performance fork of the Spigot Minecraft Server that aims to fix gameplay and mechanics inconsistencies as well as to improve performance." \
       maintainer="hbermu"
 
 RUN mkdir /papermc && \
     mkdir /papermc/workspace && \
     cd /papermc && \
-    wget https://papermc.io/api/v2/projects/paper/versions/1.18.1/builds/132/downloads/paper-1.18.1-132.jar -O paper.jar
-RUN cd /papermc && \
-    /opt/openjdk-17/bin/java -jar /papermc/paper.jar -v
+    curl -L https://papermc.io/api/v2/projects/paper/versions/1.18.1/builds/148/downloads/paper-1.18.1-148.jar -o paper.jar  && \
+    cd /papermc && \
+    /bin/java -jar /papermc/paper.jar -v
 
 COPY start_server.sh /papermc/start_server.sh
 
