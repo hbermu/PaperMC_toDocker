@@ -24,3 +24,8 @@ Run for the first time the server with a volumen and then edit de config files y
 - spigot.yml
 - bukkit.yml
 - ...
+
+# To do
+- Deploy with plugins
+- Add rcon server console
+- Auto update with latest version
